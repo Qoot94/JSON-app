@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:text="result:"
+        android:textAlignment="center"
+        android:textColor="#00559C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="354dp"
+        android:layout_margin="0dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C5397"
+            android:paddingBottom="30dp"
+            android:text="Coding Dojo Currency Converter"
+            android:textAlignment="center"
+            android:textColor="#F8EDED"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF59D"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etConvertFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="enter number to convert"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#5A2828"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00559C"
+            android:backgroundTint="#00559C"
+            android:text="convert to euro"
+            android:textColor="#FDE096" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
